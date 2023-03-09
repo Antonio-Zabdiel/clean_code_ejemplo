@@ -1,15 +1,15 @@
-body {
+.body{
     background-color: #F3F1F5;
     font-family: Consolas;
 }
 
-p{
+.parrafo{
     font-family: Consolas;
     background-color: #7F7C82;
     color: #F3F1F5;
 }
 
-h3{
+.title{
     background-color: #7F7C82;
     color: #F3F1F5;
     font-family: Consolas;
