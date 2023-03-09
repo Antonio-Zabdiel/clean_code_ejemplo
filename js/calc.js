@@ -8,12 +8,12 @@ for(var p = i; p <= f; p+=2){
 console.log(s)
 i++
 f++
-var r = [s]
+var r = "enfrente: \n"+s
 s = ""
 for(var p = i; p <= f; p+=2){
     s += p + ","
 }console.log("2, 4, 6, ...")
-r[1] = s
+r+="\nreverso: \n"+s
 console.log(s)
 return r
 }

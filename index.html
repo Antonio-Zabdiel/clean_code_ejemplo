@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Clean Code</title>
-</head>
-<body>
-    <input type="number" />
-    <br>
-    <input type="number" />
-    <br>
-    <input type="button" />
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <title>Ejemplo Clean Code</title>
+    </head>
+    <body class = "mainBody">
+        <div class = "descripcion">
+            <p>
+                Este es un software de prueba que calcula que paginas imprimir para que salga a doble cara y no tener que ponerlas todas a mano
+                En este caso será usado para comparar entre código hecho sin estanadares y código limpio hecho con el estandar Clean Code
+            </p>
+        </div>
+        <div>
+            <input type="number" placeholder="pag inicio" id="inicio"/>
+            <br>
+            <input type="number" placeholder="pag final" id="final"/>
+            <br>
+            <input type="button" value="Calcular" id="calcular"/>
+            <br>
+            <textarea id="pages"></textarea>
+        </div>
+
+        <div>
+            <input type="button" value="sucio" id="sucioBoton"/>
+            <input type="button" value="limpio" id="limpioBoton"/>
+            <br>
+            <textarea id="code"></textarea>
+        </div>
+        
+        <script src="./js/calc.js"></script>
+        <script src="./js/calcClean.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

@@ -1,18 +1,18 @@
-const calculate = (inicio, final) => {
+const calcular = (inicio, final) => {
     //calcular para imprimir a doble cara en js
 
     inicio = parseInt(inicio)   //numero de hoja en la que inicia
     final = parseInt(final)     //numero de hoja en la que termina
 
     var resultado = ""
-    var listaResultados = []
+    var resultadoCompleto = ""
 
     //numeros de página a imprimir al frente
     resultado = pages(inicio, final)
-    listaResultados[0] = resultado
 
-    console.log("enfrente: ")
-    console.log(resultado)
+    resultadoCompleto += "enfrente: \n"
+    resultadoCompleto += resultado
+    resultadoCompleto += "\n"
 
     inicio++
     final++
@@ -20,12 +20,13 @@ const calculate = (inicio, final) => {
 
     //numeros de página a imprimir al reverso
     resultado = pages(inicio, final)
-    listaResultados[1] = resultado
 
-    console.log("reverso: ")
-    console.log(resultado)
+    resultadoCompleto += "reverso: \n"
+    resultadoCompleto += resultado
 
-    return listaResultados
+    console.log(resultadoCompleto)
+
+    return resultadoCompleto
 }
 
 const pages = (inicio, final) => {
