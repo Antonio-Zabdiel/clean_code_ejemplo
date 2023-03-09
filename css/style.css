@@ -1,8 +1,52 @@
-.mainBody {
-    background-color: #83ffef;
+body {
+    background-color: #F3F1F5;
     font-family: Consolas;
 }
 
-.textareaResult {
+p{
+    font-family: Consolas;
+    background-color: #7F7C82;
+    color: #F3F1F5;
+}
 
+h3{
+    background-color: #7F7C82;
+    color: #F3F1F5;
+    font-family: Consolas;
+    margin: 1%;
+}
+
+.textareaPage {
+    background-color: #F0D9FF;
+    margin: 1%;
+    font-family: Consolas;
+    height: 75px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.textareaCod{
+    background-color: #F0D9FF;
+    margin: 1%;
+    font-family: Consolas;
+    height: 650px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.boton{
+    background-color: #BFA2DB;
+    border: 0;
+    border-radius: 10px;
+    color: #7F7C82;
+    font-family: Consolas;
+    height: 25px;
+    width: 150px;
+}
+
+.input{
+    background-color: #F0D9FF;
+    font-family: Consolas;
+    border: 0;
+    
 }

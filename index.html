@@ -4,33 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css"><!--imports style-->
         <title>Ejemplo Clean Code</title>
     </head>
-    <body class = "mainBody">
+    <body>
         <div class = "descripcion">
-            <p>
+            <h3>
                 Este es un software de prueba que calcula que paginas imprimir para que salga a doble cara y no tener que ponerlas todas a mano
                 En este caso será usado para comparar entre código hecho sin estanadares y código limpio hecho con el estandar Clean Code
-            </p>
-        </div>
-        <div>
-            <input type="number" placeholder="pag inicio" id="inicio"/>
-            <br>
-            <input type="number" placeholder="pag final" id="final"/>
-            <br>
-            <input type="button" value="Calcular" id="calcular"/>
-            <br>
-            <textarea id="pages"></textarea>
+            </h3>
         </div>
 
         <div>
-            <input type="button" value="sucio" id="sucioBoton"/>
-            <input type="button" value="limpio" id="limpioBoton"/>
-            <br>
-            <textarea id="code"></textarea>
+            <input type="number" placeholder="pag inicio" id="inicio" class="input"/>
+            <br/>
+            <input type="number" placeholder="pag final" id="final" class="input"/>
+            <br/><br/>
+            <input type="button" value="Calcular" id="calcular" class="boton"/>
+            <br/>
+            <textarea id="pages" class="textareaPage"></textarea>
+        </div>
+
+        <div>
+            <p>Ver codigo:</p>
+            <input type="button" value="sucio" id="sucioBoton" class="boton"/>
+            <input type="button" value="limpio" id="limpioBoton" class="boton"/>
+            <br/>
+            <textarea id="code" class="textareaCod"></textarea>
         </div>
         
+        <!--imports logic-->
         <script src="./js/calc.js"></script>
         <script src="./js/calcClean.js"></script>
         <script src="./js/main.js"></script>
