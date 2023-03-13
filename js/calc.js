@@ -1,3 +1,4 @@
+import sha256 from 'crypto-js/sha256';
 const func1 = (b, e) => {
 var i = parseInt(b)
 var f = parseInt(e)
